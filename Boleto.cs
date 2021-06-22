@@ -10,13 +10,15 @@ namespace Estacionamiento
         public double Precio { get; set; }
         public Cliente Cliente { get; set; }
         public Empleado Empleado  { get; set; }
+        public Vehiculo Vehiculo { get; set; }
 
-        public Boleto(DateTime fecha, Cliente cliente, Empleado empleado)
+        public Boleto( Cliente cliente, Empleado empleado, Vehiculo vehiculo)
         {
-            this.Fecha = fecha;
+            this.Fecha = DateTime.Now;
             this.Precio = 15;
             this.Cliente = cliente;
             this.Empleado = empleado;
+            this.Vehiculo = vehiculo;
         }
     }
 }

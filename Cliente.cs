@@ -6,10 +6,10 @@ namespace Estacionamiento
 {
     class Cliente : Persona
     {
-        public Vehiculo Vehiculo { get; set; }
-        public Cliente(string nombre, string apellidos, Vehiculo vehiculo) : base(nombre, apellidos)
+        public int Edad { get; set; }
+        public Cliente(string nombre, string apellidos, int edad) : base(nombre, apellidos)
         {
-            this.Vehiculo = vehiculo;
+            this.Edad = edad;
         }
     }
 }
